@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="McScoopin Poopin provides reliable weekly dog waste removal in Lancaster, Palmdale, and Quartz Hill, CA. First week FREE. No contracts. Call 661-270-6662.">
+<title>McScoopin Poopin – Dog Waste Removal | Lancaster, Palmdale & Quartz Hill</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--blue:#2E86C1;--blue-dark:#1A5276;--black:#111;--gray:#F5F5F5;--text:#1a1a1a;--muted:#666;--green:#27ae60;--red:#e74c3c;--orange:#d35400;}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',system-ui,Arial,sans-serif;color:var(--text);background:#fff;}
+a{text-decoration:none;}
+img{max-width:100%;display:block;}
+
+/* NAV */
+nav{background:var(--black);position:sticky;top:0;z-index:1000;}
+.nav-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0.65rem 1.5rem;gap:1rem;}
+.nav-logo img{height:52px;}
+.nav-links{display:flex;gap:1.5rem;list-style:none;}
+.nav-links a{color:#ccc;font-size:14px;}
+.nav-links a:hover{color:#fff;}
+.nav-r{display:flex;gap:10px;align-items:center;}
+.btn-call{color:#fff !important;border:1.5px solid #444;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:600;}
+.btn-nav{background:var(--blue);color:#fff !important;padding:8px 18px;border-radius:6px;font-size:14px;font-weight:700;}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.burger span{width:24px;height:2px;background:#fff;border-radius:2px;}
+.mob-menu{display:none;background:#1a1a1a;padding:1rem 1.5rem;}
+.mob-menu a{display:block;color:#ccc;padding:10px 0;font-size:15px;border-bottom:1px solid #222;}
+.mob-menu a:last-child{border:none;}
+
+/* SUMMER */
+.summer{background:var(--orange);color:#fff;text-align:center;padding:10px 1rem;font-size:13px;font-weight:600;}
+
+/* HERO */
+.hero{background:var(--black);min-height:540px;display:flex;align-items:center;}
+.hero-in{max-width:1100px;margin:0 auto;padding:3rem 1.5rem;display:flex;align-items:center;gap:3rem;}
+.hero-txt{flex:1;}
+.badge{display:inline-block;background:var(--blue);color:#fff;padding:5px 16px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:1.25rem;letter-spacing:.5px;}
+.hero-txt h1{font-size:3rem;color:#fff;line-height:1.1;margin-bottom:1rem;font-weight:700;}
+.hero-txt h1 span{color:var(--blue);}
+.hero-txt p{color:#bbb;font-size:1.05rem;margin-bottom:.75rem;line-height:1.7;}
+.hero-free{color:var(--green);font-size:15px;font-weight:600;margin-bottom:1.75rem;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-p{background:var(--blue);color:#fff !important;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:700;display:inline-block;}
+.btn-p:hover{background:var(--blue-dark);}
+.btn-s{background:transparent;color:#fff !important;border:2px solid #555;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:700;display:inline-block;}
+.hero-img{flex-shrink:0;width:420px;}
+.hero-img img{width:100%;height:440px;object-fit:cover;border-radius:16px;}
+
+/* TRUST */
+.trust{background:var(--blue-dark);color:#fff;padding:.9rem 1.5rem;}
+.trust-in{max-width:1100px;margin:0 auto;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;}
+.ti{display:flex;align-items:center;gap:7px;font-size:13px;}
+
+/* SECTIONS */
+.sec{padding:5rem 1.5rem;background:#fff;}
+.sec-g{padding:5rem 1.5rem;background:var(--gray);}
+.sec-d{padding:5rem 1.5rem;background:var(--black);}
+.sec-in{max-width:1100px;margin:0 auto;}
+.ey{color:var(--blue);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.4rem;}
+h2.st{font-size:2.2rem;color:var(--text);margin-bottom:.5rem;font-weight:700;}
+.sec-d h2.st{color:#fff;}
+p.ss{color:var(--muted);font-size:1rem;max-width:580px;}
+.sh{margin-bottom:2.5rem;}
+.shc{text-align:center;margin-bottom:2.5rem;}
+.shc .ss{margin:0 auto;}
+
+/* PREVIEW CARDS */
+.preview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;}
+.preview-card{background:#fff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;transition:transform .2s;}
+.preview-card:hover{transform:translateY(-3px);}
+.preview-card img{width:100%;height:200px;object-fit:cover;}
+.preview-card-body{padding:1.25rem;}
+.preview-card-body h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;color:var(--text);}
+.preview-card-body p{font-size:13px;color:var(--muted);margin-bottom:.75rem;}
+.preview-card-body a{color:var(--blue);font-size:13px;font-weight:700;}
+
+/* BA PREVIEW */
+.ba-prev{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.ba-c{flex:1;min-width:260px;border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1);}
+.ba-l{padding:10px;font-size:13px;font-weight:700;text-align:center;}
+.ba-l.b{background:var(--red);color:#fff;}
+.ba-l.a{background:var(--green);color:#fff;}
+.ba-c img{width:100%;height:240px;object-fit:cover;}
+
+/* REVIEW PREVIEW */
+.rev-prev{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;}
+.rc{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:1.25rem;}
+.stars{color:#F4B400;font-size:14px;margin-bottom:.5rem;}
+.rc p{font-size:14px;color:#333;line-height:1.5;margin-bottom:.5rem;}
+.rc strong{font-size:13px;color:var(--muted);}
+
+/* WHY */
+.why-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.25rem;}
+.wc{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:1.4rem;text-align:center;}
+.wc .wi{font-size:2rem;margin-bottom:.6rem;}
+.wc h3{font-size:.9rem;font-weight:700;margin-bottom:.3rem;color:var(--text);}
+.wc p{font-size:12px;color:var(--muted);}
+
+/* CTA BAND */
+.cta-band{background:var(--blue);color:#fff;text-align:center;padding:4rem 1.5rem;}
+.cta-band h2{font-size:2rem;margin-bottom:.75rem;}
+.cta-band p{color:rgba(255,255,255,.85);margin-bottom:1.5rem;font-size:1rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-wh{background:#fff;color:var(--blue) !important;padding:13px 26px;border-radius:8px;font-size:15px;font-weight:700;display:inline-block;}
+.btn-wh-out{background:transparent;color:#fff !important;border:2px solid rgba(255,255,255,.6);padding:13px 26px;border-radius:8px;font-size:15px;font-weight:700;display:inline-block;}
+
+/* MOBILE CTA */
+.mob-cta{display:none;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e0e0e0;padding:10px 1rem;z-index:999;gap:10px;}
+.mob-cta a{flex:1;text-align:center;padding:12px;border-radius:8px;font-size:15px;font-weight:700;}
+.mc-call{background:var(--black);color:#fff !important;}
+.mc-quote{background:var(--blue);color:#fff !important;}
+
+/* FOOTER */
+footer{background:var(--black);color:#aaa;padding:3rem 1.5rem;text-align:center;}
+.foot-logo{height:75px;margin:0 auto 1rem;}
+footer p{font-size:13px;margin-bottom:.35rem;}
+footer a{color:var(--blue);}
+.foot-links{display:flex;gap:1.5rem;justify-content:center;margin:.75rem 0;flex-wrap:wrap;}
+.foot-links a{color:#aaa;font-size:13px;}
+.foot-links a:hover{color:#fff;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-in{flex-direction:column;padding:2rem 1rem;text-align:center;}
+  .hero-txt h1{font-size:2.1rem;}
+  .hero-img{width:100%;}
+  .hero-img img{height:280px;}
+  .hero-btns{justify-content:center;}
+  .nav-links,.btn-call{display:none;}
+  .burger{display:flex;}
+  .trust-in{gap:.75rem;}
+  .ti{font-size:12px;}
+  .sec,.sec-g,.sec-d{padding:3rem 1rem;}
+  h2.st{font-size:1.7rem;}
+  .mob-cta{display:flex;}
+  body{padding-bottom:72px;}
+}
+</style>
+</head>
+<body>
+
+<div class="summer">🌡️ AV summers hit 100°+. Nobody should be picking up dog poop in this heat. That's what we're for.</div>
+
+<nav>
+<div class="nav-in">
+  <a class="nav-logo" href="index.html"><img src="https://images.squarespace-cdn.com/content/6a3cb36d179b291b9d949600/03391bc9-c9ca-4764-b4a6-301021e83715/Logo.png?content-type=image%2Fpng" alt="McScoopin Poopin"></a>
+  <ul class="nav-links">
+    <li><a href="how-it-works.html">How It Works</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
+    <li><a href="before-after.html">Before & After</a></li>
+  </ul>
+  <div class="nav-r">
+    <a href="tel:6612706662" class="btn-call">📞 661-270-6662</a>
+    <a href="contact.html" class="btn-nav">Get a Free Quote</a>
+  </div>
+  <div class="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</div>
+<div class="mob-menu" id="mobMenu">
+  <a href="how-it-works.html" onclick="toggleMenu()">How It Works</a>
+  <a href="pricing.html" onclick="toggleMenu()">Pricing</a>
+  <a href="reviews.html" onclick="toggleMenu()">Reviews</a>
+  <a href="our-story.html" onclick="toggleMenu()">Our Story</a>
+  <a href="before-after.html" onclick="toggleMenu()">Before & After</a>
+  <a href="contact.html" onclick="toggleMenu()" style="color:var(--blue);font-weight:700;">Get a Free Quote →</a>
+  <a href="tel:6612706662">📞 661-270-6662</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-in">
+  <div class="hero-txt">
+    <div class="badge">🐾 Serving Lancaster · Palmdale · Quartz Hill</div>
+    <h1>Your Dog's Business<br>Is <span>Our Business.</span></h1>
+    <p>We pick up dog waste so you don't have to. Weekly recurring service — consistent, reliable, and hassle-free.</p>
+    <p class="hero-free">✨ First week always FREE for new recurring clients.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-p">Get My Free Quote</a>
+      <a href="tel:6612706662" class="btn-s">📞 Call or Text</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="Me smiling with dog.jpg" alt="John from McScoopin Poopin with a happy client dog in Lancaster CA">
+  </div>
+</div>
+</section>
+
+<div class="trust">
+<div class="trust-in">
+  <div class="ti">⭐ 10 Five-Star Google Reviews</div>
+  <div class="ti">🔁 No Contracts. Cancel Anytime.</div>
+  <div class="ti">🎉 First Week FREE</div>
+  <div class="ti">🧹 Locally Owned & Operated</div>
+  <div class="ti">📸 Gate Photo After Every Visit</div>
+</div>
+</div>
+
+<!-- WHY US -->
+<section class="sec">
+<div class="sec-in">
+  <div class="shc">
+    <div class="ey">Why dog owners choose us</div>
+    <h2 class="st">Dependable. Thorough. Local.</h2>
+    <p class="ss">10 five-star Google reviews from real Antelope Valley families.</p>
+  </div>
+  <div class="why-g">
+    <div class="wc"><div class="wi">📅</div><h3>Same Day Every Week</h3><p>Consistent and reliable. You always know when we're coming.</p></div>
+    <div class="wc"><div class="wi">💰</div><h3>Flat Monthly Rate</h3><p>$100/month. No surprises. No hidden fees.</p></div>
+    <div class="wc"><div class="wi">🎉</div><h3>First Week FREE</h3><p>Every new recurring client gets their first visit free.</p></div>
+    <div class="wc"><div class="wi">🧼</div><h3>Sanitized Equipment</h3><p>Tools sanitized between every single yard.</p></div>
+    <div class="wc"><div class="wi">📸</div><h3>Gate Photo Every Visit</h3><p>Photo of your closed gate after every service.</p></div>
+    <div class="wc"><div class="wi">☀️</div><h3>We Handle the Heat</h3><p>AV summers are brutal. We handle the dirty work.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- BEFORE AFTER PREVIEW -->
+<section class="sec-g">
+<div class="sec-in">
+  <div class="shc">
+    <div class="ey">Real results</div>
+    <h2 class="st">See the Difference</h2>
+    <p class="ss">This is what a weekly cleanup looks like. Every single visit.</p>
+  </div>
+  <div class="ba-prev">
+    <div class="ba-c">
+      <div class="ba-l b">❌ Before</div>
+      <img src="IMG_9123.jpeg" alt="Yard before dog waste cleanup Lancaster CA" loading="lazy">
+    </div>
+    <div class="ba-c">
+      <div class="ba-l a">✅ After</div>
+      <img src="IMG_9133.jpeg" alt="Yard after dog waste cleanup Lancaster CA" loading="lazy">
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2rem;">
+    <a href="before-after.html" class="btn-p">See More Before & After Photos →</a>
+  </div>
+</div>
+</section>
+
+<!-- REVIEWS PREVIEW -->
+<section class="sec">
+<div class="sec-in">
+  <div class="shc">
+    <div class="ey">What customers say</div>
+    <h2 class="st">10 Five-Star Reviews on Google</h2>
+    <p class="ss">Real Antelope Valley dog owners who trust us every week.</p>
+  </div>
+  <div class="rev-prev">
+    <div class="rc"><div class="stars">★★★★★</div><p>"Great experience every time. The owner is down-to-earth, reliable, and puts real pride into what he does. Amazing customer service!"</p><strong>— Christopher K., Lancaster</strong></div>
+    <div class="rc"><div class="stars">★★★★★</div><p>"John is very dependable, courteous and consistently thorough! I would highly recommend this business for anyone needing this service!"</p><strong>— Donna H., Antelope Valley</strong></div>
+    <div class="rc"><div class="stars">★★★★★</div><p>"He goes above and beyond for his customers. I am very happy to have found this company and will gladly continue his services!"</p><strong>— Jenelle P., Palmdale</strong></div>
+  </div>
+  <div style="text-align:center;margin-top:2rem;">
+    <a href="reviews.html" class="btn-p">Read All Reviews →</a>
+  </div>
+</div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Ready for a Clean Yard?</h2>
+  <p>Fill out a quick form and we'll send your flat monthly quote. Takes under 2 minutes.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-wh">Get My Free Quote</a>
+    <a href="tel:6612706662" class="btn-wh-out">📞 Call or Text John</a>
+  </div>
+</div>
+
+<footer>
+  <img class="foot-logo" src="https://images.squarespace-cdn.com/content/6a3cb36d179b291b9d949600/03391bc9-c9ca-4764-b4a6-301021e83715/Logo.png?content-type=image%2Fpng" alt="McScoopin Poopin">
+  <p><strong style="color:#fff;">McScoopin Poopin</strong> — Dog Waste Removal</p>
+  <p>Lancaster · Palmdale · Quartz Hill, CA</p>
+  <p><a href="tel:6612706662">(661) 270-6662</a></p>
+  <div class="foot-links">
+    <a href="how-it-works.html">How It Works</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="our-story.html">Our Story</a>
+    <a href="before-after.html">Before & After</a>
+    <a href="contact.html">Get a Quote</a>
+  </div>
+  <p style="font-size:12px;margin-top:.5rem;">© 2026 McScoopin Poopin. All rights reserved.</p>
+</footer>
+
+<div class="mob-cta">
+  <a href="tel:6612706662" class="mc-call">📞 Call Now</a>
+  <a href="contact.html" class="mc-quote">Get Free Quote</a>
+</div>
+
+<script>
+function toggleMenu(){var m=document.getElementById('mobMenu');m.style.display=m.style.display==='block'?'none':'block';}
+</script>
+</body>
+</html>
